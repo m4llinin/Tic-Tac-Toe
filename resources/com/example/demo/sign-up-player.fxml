@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="338.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.SignUpPlayer">
+   <children>
+      <ImageView fitHeight="338.0" fitWidth="600.0" layoutX="190.0" layoutY="166.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <Group layoutX="83.0" layoutY="92.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="254.0" text="Введите имя игрока 1:" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputName1" layoutX="254.0" prefHeight="26.0" prefWidth="180.0" promptText="Игрок 1" style="-fx-background-color: rgba(255, 255, 255, 0.4); -fx-background-radius: 15; -fx-text-fill: white;">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </Group>
+      <Button layoutX="216.0" layoutY="240.0" mnemonicParsing="false" onAction="#startGame" prefHeight="46.0" prefWidth="196.0" style="-fx-background-color: rgba(255, 255, 255, 0.4); -fx-background-radius: 15;" text="НАЧАТЬ ИГРУ" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="25.0" />
+         </font>
+      </Button>
+      <Group layoutX="83.0" layoutY="143.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="254.0" text="Введите имя игрока 2:" textFill="WHITE">
+               <font>
+                  <Font name="Consolas Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputName2" layoutX="255.0" prefHeight="26.0" prefWidth="180.0" promptText="Игрок 2" style="-fx-background-color: rgba(255, 255, 255, 0.4); -fx-background-radius: 15; -fx-text-fill: white;">
+               <font>
+                  <Font name="Consolas Bold" size="12.0" />
+               </font>
+            </TextField>
+         </children>
+      </Group>
+      <Label layoutX="131.0" layoutY="34.0" text="Регистрация игроков" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="35.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
